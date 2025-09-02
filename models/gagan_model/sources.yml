@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: source1           # Name of your source
+    database: snowflake_intelligence     # Database name
+    schema: Public        # Schema name
+    tables:
+      - name: test_gagan           # First table
+        columns:
+          - name: A
+            description: Primary key
+            tests:
+              - unique
+              - not_null
+          

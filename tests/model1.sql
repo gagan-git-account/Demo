@@ -1,0 +1,1 @@
+select count(*) from {{ref("model1")}} having count(*)>1
